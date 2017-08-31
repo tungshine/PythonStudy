@@ -15,10 +15,12 @@ import os
 # print(os.listdir('E:/python/PythonStudy'))
 # print(os.path.dirname('E:/python/PythonStudy/day13'))  # 获取当前目录的父目录路径
 
-info = os.stat('E:/python/PythonStudy/day13')  # 获取文件信息，其中路径用绝对路径
-print(info.st_size)  # 文件大小
-print(info.st_atime)  # 最后访问时间
-print(info.st_mtime)  # 最后修改时间
-print(info.st_ctime)  # 最后更改时间
+# info = os.stat('E:/python/PythonStudy/day13')  # 获取文件信息，其中路径用绝对路径
+# print(info.st_size)  # 文件大小
+# print(info.st_atime)  # 最后访问时间
+# print(info.st_mtime)  # 最后修改时间
+# print(info.st_ctime)  # 最后更改时间
+#
+# print(os.path.dirname(__file__))
 
-print(os.path.dirname(__file__))
+os.system('dir')
