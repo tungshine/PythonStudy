@@ -5,8 +5,11 @@
 import json
 
 dic = {'name': 'alex', 'age': '18'}
-
-data = json.dumps(dic)
 f = open('JSON_text', 'w')
-f.write(data)
+
+# data = json.dumps(dic)
+# f.write(data)
+# f.close()
+
+data = json.dump(dic, f)
 f.close()
