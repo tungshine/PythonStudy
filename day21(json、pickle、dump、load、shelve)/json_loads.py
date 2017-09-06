@@ -5,11 +5,13 @@
 import json
 
 f = open('JSON_text', 'r')
-data = f.read()
-dic = json.loads(data)
+# data = f.read()
+# dic = json.loads(data)
+#
+# print(dic['name'])
 
-print(dic['name'])
-
+dic = json.load(f)
+print(dic.get('name'))
 
 
 

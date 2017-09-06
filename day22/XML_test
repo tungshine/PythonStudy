@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<data>
+    <country name="China" value="中国">
+        <province name="北京市">
+            <city name="北京市" code="010"/>
+        </province>
+        <province name="四川省">
+            <city name="成都市" code="028">
+                <area>高新区</area>
+                <area>武侯区</area>
+                <area>成华区</area>
+            </city>
+        </province>
+        <province name="广东省"/>
+    </country>
+    <country name="Singapore" value="新加坡"></country>
+</data>
