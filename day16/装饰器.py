@@ -3,15 +3,6 @@
 import time
 
 
-def foo():
-    print('foo...')
-    time.sleep(2)
-
-
-def bar():
-    print('bar...')
-
-
 def show_time(f):
     def inner():
         start = time.time()
@@ -21,3 +12,15 @@ def show_time(f):
 
     return inner
 
+
+def foo():
+    print('foo...')
+    time.sleep(2)
+
+
+@show_time  # bar = show_time(bar) # 等价与@show_time函数
+def bar():
+    print('bar...')
+
+
+bar()
