@@ -21,7 +21,7 @@ logger = logging.getLogger()
 
 logger.setLevel(logging.DEBUG)
 
-fh = logging.FileHandler('test.log')  # 创建一个handler,用于写入日志文件
+fh = logging.FileHandler('test.log', encoding='utf8')  # 创建一个handler,用于写入日志文件
 sh = logging.StreamHandler()  # 再创建一个handler,用于输出到控制台
 
 formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s- %(message)s')
