@@ -3,7 +3,7 @@
 # __description: 继承
 
 
-class Father():
+class Father:
     def smoke(self):
         print(self)
         print('smoke...')
@@ -16,12 +16,16 @@ class Father():
 
 
 class Son(Father):  # 子类,派生类
-
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
     def playing(self):
+        """
+        调用父类的2中方式，常用第一种
+        super(Son, self).smoke()
+        Father.smoke(self)
+        """
         print('playing...')
         print(self)
         pass
