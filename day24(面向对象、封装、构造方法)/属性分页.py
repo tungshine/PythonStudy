@@ -12,13 +12,11 @@ class Pagination:
 
     @property
     def start(self):
-        val = (self.page - 1) * 10 + 1
-        return val
+        return (self.page - 1) * 10 + 1
 
     @property
     def end(self):
-        val = self.page * 10
-        return val
+        return self.page * 10
 
 
 li = []
