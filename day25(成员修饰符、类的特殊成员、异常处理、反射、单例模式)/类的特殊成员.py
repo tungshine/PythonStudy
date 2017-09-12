@@ -35,7 +35,6 @@ class Foo:
     def __delitem__(self, key):
         print(key)
 
-
 # obj = Foo()
 # obj()  # 对象后面再加上()时,类中的方法必须加上系统的内置方法__call__()
 # print(int(obj))  # 在用int()方法将对象转换为int类型时,自动执行__int__()方法,并将返回值赋值给int对象
