@@ -21,7 +21,7 @@ print(type(Foo2), Foo2())
 
 
 class MyType(type):
-    def __int__(self):
+    def __init__(self, *args, **kwargs):
         print(123)
         pass
 
