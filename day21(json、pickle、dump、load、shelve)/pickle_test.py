@@ -15,16 +15,14 @@ import pickle
 # f.close()
 
 
-dict = {
-
+data = {
     "school": {
         "study": "day"
     },
 }
-
 # data = pickle.dumps(dict)
 
 f = open('pick1_text', 'wb')
 # f.write(data)
 # f.close()
-pickle.dump(dict, f)
+pickle.dump(data, f)
