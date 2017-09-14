@@ -3,13 +3,28 @@
 
 import pickle
 
+#
+# def foo():
+#     print('ok')
+#
+#
+# data = pickle.dumps(foo)
+#
+# f = open('PICKLE_text', "wb")
+# f.write(data)
+# f.close()
 
-def foo():
-    print('ok')
 
+dict = {
 
-data = pickle.dumps(foo)
+    "school": {
+        "study": "day"
+    },
+}
 
-f = open('PICKLE_text', "wb")
-f.write(data)
-f.close()
+# data = pickle.dumps(dict)
+
+f = open('pick1_text', 'wb')
+# f.write(data)
+# f.close()
+pickle.dump(dict, f)
