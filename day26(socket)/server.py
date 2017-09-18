@@ -25,8 +25,11 @@ while 1:
     conn, address = sk.accept()
 
     while True:
-        data = conn.recv(1024)
-        print("....", str(data, "utf8"))
+        try:
+            data = conn.recv(1024)
+            print("....", str(data, "utf8"))
+        except ConnectionResetError as e:
+            print(e)
         if not data:
             conn.close()
             conn, address = sk.accept()
