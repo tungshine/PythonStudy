@@ -17,7 +17,12 @@ def book(request):
     print(request['QUERY_STRING'])
     with open('templates/book.html', 'rb') as f:
         data = f.read()
-    return [data]
+        """
+            页面传值：
+            运用自定义模板方式将文件中内容替换掉
+        """
+        _data = data.decode('utf8').replace('{{name}}', '大数据')
+    return [_data.encode('utf8')]
 
 
 def routers():
